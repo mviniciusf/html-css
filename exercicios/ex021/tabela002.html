@@ -14,18 +14,36 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative;      
+    }
+
+    caption {
+      background-color: rgba(0, 0, 0, 0.308);
+      color: white;      
+      padding: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
     }
 
     th, td {
-      border: 1px solid black;
+      border: 1px solid black;      
       padding: 8px;
     }
 
-    thead, tfoot {
-      background-color: gray;
+    thead > tr > th {
+      position: sticky;
+      top: 0;
+      background-color:#808080 ;
+    }
+
+    thead, tfoot {      
+      background-color: rgba(0, 0, 0, 0.445);
       color:white;
     }
 
+    tbody > tr:nth-child(2n) {
+      background-color: #808080;
+    }
     .num {
       text-align: right;
     }
@@ -36,19 +54,21 @@
     <!--
       ANATOMIA PARA TABELAS GRANDES
       TABLE 
-        THEAD
-          TR,TD, TH
-        TBODY
-          TR,TD, TH
-        TFOOT
-          TR,TD, TH
+        CAPTION
+          THEAD
+            TR,TD, TH
+          TBODY
+            TR,TD, TH
+          TFOOT
+            TR,TD, TH
     -->
 
     <table>
-      <thead>
+      <caption>População das Unidades Federativas</caption>
+      <thead>        
         <tr>
-          <th>Estado</th>
-          <th>População</th>          
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px;">População</th>          
         </tr>
       </thead>
       <tbody>
@@ -100,13 +120,70 @@
           <td>Maranhão</td>
           <td class="num">6.800.605</td>
         </tr> 
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">7.762.154</td>
+        </tr> 
+        <tr>
+          <td>Goiás</td>
+          <td class="num">6.950.976</td>
+        </tr> 
+        <tr>
+          <td>Maranhão</td>
+          <td class="num">6.800.605</td>
+        </tr> 
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">7.762.154</td>
+        </tr> 
+        <tr>
+          <td>Goiás</td>
+          <td class="num">6.950.976</td>
+        </tr> 
+        <tr>
+          <td>Maranhão</td>
+          <td class="num">6.800.605</td>
+        </tr> 
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">7.762.154</td>
+        </tr> 
+        <tr>
+          <td>Goiás</td>
+          <td class="num">6.950.976</td>
+        </tr> 
+        <tr>
+          <td>Maranhão</td>
+          <td class="num">6.800.605</td>
+        </tr> 
+        <td>São Paulo</td>
+          <td class="num">46.024.937</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">20.732.660</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="num">16.615.526</td>
+        </tr>       
+        <tr>
+          <td>Bahia</td>
+          <td class="num">14.659.023</td>
+        </tr> 
+        <tr>
+          <td>Paraná</td>
+          <td class="num">11.835.379</td>
+        </tr> 
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de Habitantes</th>
+          <th scope="row">Total de Habitantes</th>
           <td><strong>168.899.831</strong></td>
         </tr>
       </tfoot>
     </table>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci esse numquam illum autem error inventore quod consequuntur hic quia. Corporis placeat doloribus debitis, pariatur cumque delectus molestias maiores quos ad incidunt id facere, sint nostrum. Voluptates ducimus totam ut voluptate voluptatum at perspiciatis unde dicta, cum vitae inventore, corporis commodi itaque dolores perferendis pariatur eveniet eaque facere maiores qui nemo minima aperiam! Eos nostrum consequatur id porro assumenda ad perferendis possimus amet optio. Labore asperiores corrupti voluptates possimus, quibusdam laboriosam accusamus blanditiis illo similique. Tempore nam ab iusto consequatur molestiae deleniti, nemo odit molestias nobis officiis ipsa illum ipsam at sed distinctio cum, iure cupiditate fugit ex eveniet nostrum rem illo laudantium hic? Similique aliquid exercitationem dicta accusamus perspiciatis. Alias exercitationem ab provident vitae earum animi nobis ex, itaque architecto, unde nulla laborum magnam, perferendis aspernatur tempora velit iure quia quisquam nam? Vel blanditiis, atque nemo nam earum adipisci voluptatibus perspiciatis in fugit, necessitatibus nulla impedit modi? Animi fugiat voluptate, harum dolorum deserunt minima a necessitatibus consequuntur recusandae fuga maiores pariatur architecto tempora fugit mollitia saepe assumenda doloremque modi magni in! Earum labore cum, doloribus quasi placeat, magni voluptatum rem, dolore et possimus tenetur distinctio. Recusandae cumque velit inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio sunt similique odit quia magnam laborum hic iste vero, eveniet vitae sapiente culpa quae reiciendis, iure optio porro blanditiis autem. eveniet nostrum rem illo laudantium hic? Similique aliquid exercitationem dicta accusamus perspiciatis. Alias exercitationem ab provident vitae earum animi nobis ex, itaque architecto, unde nulla laborum magnam, perferendis aspernatur tempora velit iure quia quisquam nam? Vel blanditiis, atque nemo nam earum adipisci voluptatibus perspiciatis in fugit, necessitatibus nulla impedit modi? Animi fugiat voluptate, harum dolorum deserunt minima a necessitatibus consequuntur recusandae fuga maiores pariatur architecto tempora fugit mollitia saepe assumenda doloremque modi magni in! Earum labore cum, doloribus quasi placeat, magni voluptatum rem, dolore et possimus tenetur distinctio. Recusandae cumque velit inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio sunt similique odit quia magnam laborum hic iste vero, eveniet vitae sapiente culpa quae reiciendis, iure optio porro blanditiis autem</p>
 </body>
 </html>
