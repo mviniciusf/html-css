@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de iframes</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe {
+      width: 90vw;
+      border: 2px solid black;
+      height: 450px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, omnis ea quis id voluptas veritatis quae distinctio eaque aliquid adipisci. Dolor ut voluptatum quo eligendi iure corporis, deserunt optio fuga!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam dolorem qui omnis rerum, sint praesentium quod atque unde, cupiditate nisi animi et a cumque! Nihil nisi magni sequi autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo neque eveniet totam. Doloribus, pariatur aut, dolores ipsa non eveniet rem facere unde nemo, dolorem qui! Amet rerum officiis culpa.</p>
+     
+    <!--É possivel utilizar o (srcdoc) como mostrado abaixo para inserir codigo HTML dentro do iframe-->
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam dolorem qui omnis rerum, sint praesentium quod atque unde, cupiditate nisi animi et a cumque!</p> <img src='imagens/download.png'>" name="frame" >
+      <p>Infelizmente seu navegador não é compativel com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minus dolore error ab assumenda cum in aperiam, architecto repellendus animi doloremque neque expedita quas, maiores est at. Dolorem, esse quia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita voluptates aliquid corporis quibusdam blanditiis eaque, nostrum laborum! Voluptatibus id, sunt nesciunt vero hic tempora pariatur nam nihil odit recusandae.</p>
+</body>
+</html>
