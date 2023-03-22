@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário do PDF</title>
+</head>
+<body>
+    <h1>Criando um modelo do PDF</h1>
+    <form action="cadastro.php" method="post" >
+
+      <p>
+        <label for="imod">Modelo do Celular: </label>
+        <select name="modelo" id="imod">
+          <option value="">--- Escolha ---</option>
+          <optgroup label="Apple">
+            <option value="">iPhone 11 32gb</option>
+            <option value="">iPhone 11 pro 64gb</option>
+            <option value="">iPhone 11 pro max 128gb</option>
+          </optgroup>
+          <optgroup label="Samsung">
+            <option value="">Galaxy S10</option>
+            <option value="">Galaxy S20</option>
+            <option value="">Galaxy S20 Ultra</option>
+          </optgroup>
+        </select>
+        <p><label for="iespec">Especificações Técnicas: </label></p>
+        <textarea name="espec" id="iespec" cols="50" rows="10"></textarea>
+        <p><label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">          
+          <optgroup label="prof">
+            <option value="Professor"></option>
+            <option value="Agricultor"></option>
+            <option value="Policial"></option>
+            <option value="Desenvolvedor"></option>
+          </optgroup>
+          <optgroup label="Negócios">
+            <option value="Administrador"></option>
+            <option value="Contabilista"></option>
+            <option value="Gestor de RH"></option>            
+          </optgroup>
+        </datalist></p>        
+      </p>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
