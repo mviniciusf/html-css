@@ -91,9 +91,9 @@ div.campo > i {
     font-size: .8em;
     border: 0px;
     height: 95%;
-    width: calc(100% - 36px);  
+    width: calc(100% - 37px);  
     border-radius: 8px;
-    transform: translateY(-12px);
+    transform: translateY(-11px);
     
   }
 
